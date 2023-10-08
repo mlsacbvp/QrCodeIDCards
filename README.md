@@ -56,7 +56,7 @@ Once your changes are approved, your pull request will be merged into the main r
 ## Conclusion
 Thank you for contributing to the QR Code ID Cards open source project. Your efforts help improve this project and make it better for everyone. If you have any questions or need assistance, please feel free to reach out to the project maintainers. Happy coding!
 
-### links
+## Links
 
 <a href='#contributing'>👨🏻‍💻Contributing</a>
 
