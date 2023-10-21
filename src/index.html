@@ -5,13 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR CODE ID CARDS</title>
+    <style>
+        .navbar{
+            background-color: pink;
+            border-radius: 8px;
+        }
+        .navbar ul{
+            /* since we dont see any background color even after specifyinh, this is due to float left property. whenever we give float property, the element overflows from its parent element, to reverse that we write: */
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            /* this is done to make all nav elements appear in a single horizontal line rather than a vertical list */
+            list-style: none; /* to remove bullets of the list elements */
+            margin: 13px 60px; /* vertical horizontal */
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; /* in order to remove the underlines */
+            color: black; 
+        }
+        .navbar li a:hover{
+            background-color: rgb(235, 125, 125);
+            color: white;
+        }
+        
+        .search{
+            float: right;
+            color: maroon;
+            margin: 13px 60px; 
+            /* so that its placing is also symmetrical to other nav elements */
+        }
+        .navbar input{
+            border: 3px solid rgb(57, 20, 92);
+            border-radius: 9px;
+            padding: 3px 10px;
+            width: 130px;
+        }
+
+
+    </style>
 </head>
 
 <body>
-    <h1>
-        Qr Id card Project
-    </h1>
-
+    <header>
+        <nav class="navbar">
+            <ul>
+                <!-- type li*4 and press enter to get 4 li elements -->
+                <li><a href="abd">Home</a></li>
+                <li><a href="abd">About</a></li>
+                <li><a href="abd">Services</a></li>
+                <li><a href="abd">Contact Us</a></li>
+                <!-- to add search bar in navigation menu: -->
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search within this website"> <!-- this is a searchbox -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+    
 </body>
-
 </html>
