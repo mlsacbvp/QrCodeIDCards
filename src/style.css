@@ -100,11 +100,28 @@ header {
 }
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 3px 0;
     border-radius: 5px;
-    background-color: DarkSalmon;
+    background-color: rgb(184, 196, 244);
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-.container{
-    
+
+.author{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+h3{
+    font-family:fantasy;
+    color: brown;
+}
+
+.call-number a {
+    color: #821b1b;
+    /* Set the color of the phone number */
+    text-decoration: underline;
 }
