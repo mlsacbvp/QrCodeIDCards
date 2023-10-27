@@ -5,87 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR CODE ID CARDS</title>
-    <style>
-        body {
-            background-color: azure;
-        }
-
-        .navbar {
-            background-color: rgb(184, 196, 244);
-            border-radius: 8px;
-        }
-
-        .navbar ul {
-            /* since we dont see any background color even after specifyinh, this is due to float left property. whenever we give float property, the element overflows from its parent element, to reverse that we write: */
-            overflow: auto;
-        }
-
-        .navbar li {
-            float: left;
-            /* this is done to make all nav elements appear in a single horizontal line rather than a vertical list */
-            list-style: none;
-            /* to remove bullets of the list elements */
-            margin: 13px 60px;
-            /* vertical horizontal */
-        }
-
-        .navbar li a {
-            padding: 3px 3px;
-            text-decoration: none;
-            /* in order to remove the underlines */
-            color: black;
-        }
-
-        .navbar li a:hover {
-            background-color: rgb(235, 125, 125);
-            color: white;
-        }
-
-        .search {
-            float: right;
-            color: maroon;
-            margin: 13px 60px;
-            /* so that its placing is also symmetrical to other nav elements */
-        }
-
-        .navbar input {
-            border: 3px solid rgb(57, 20, 92);
-            border-radius: 9px;
-            padding: 3px 10px;
-            width: 130px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
     <main>
 </head>
 
 <body>
-    <h1>
+    <!-- <h1>
         QR Code ID CARDS
     </h1>
     <p>
         QR code: A one stop solution.
-    </p>
+    </p> -->
     <header>
-        <style>
-            header {
-                border: 1px solid rgb(122, 176, 190);
-                background-color: rgb(130, 189, 207);
-                padding: 10px;
-                border-radius: 5px;
-            }
-
-            footer {
-                text-align: center;
-                padding: 3px;
-                background-color: DarkSalmon;
-                color: white;
-            }
-        </style>
-        <footer>
-            <p>Author: MLSAC BVP<br>
-                <a href="https://www.linkedin.com/company/mlsacbvp/">LinkedIn</a>
-            </p>
-        </footer>
         <nav class="navbar">
             <ul>
                 <!-- type li*4 and press enter to get 4 li elements -->
@@ -100,8 +31,21 @@
                 </div>
             </ul>
         </nav>
+        <div class="container">
+            <div class="form">
+                <input type="text" placeholder="Enter text or URL">
+                <button>Generate QR Code</button>
+            </div>
+            <div class="qr-code">
+                <img src="" alt="qr-code">
+            </div>
+        </div>
+        <footer>
+            <p>Author: MLSAC BVP<br>
+                <a href="https://www.linkedin.com/company/mlsacbvp/">LinkedIn</a>
+            </p>
+        </footer>
     </header>
-
     </main>
 </body>
 
