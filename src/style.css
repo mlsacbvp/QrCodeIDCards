@@ -73,6 +73,11 @@ header {
     justify-content: center;
     min-height:82vh;
 }
+
+.center{
+    text-align: center;
+}
+
 .wrapper.active{
     height: 530px;
 }
